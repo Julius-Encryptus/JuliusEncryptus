@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Spinner } from "@/components/ui/spinner";
+import Link from "next/link";
 
 import { services, team } from "@/lib/constants";
 import ServiceButton from "@/components/service";
@@ -47,7 +47,9 @@ export default function Index() {
             of a Caesar Cipher to uncover any relevant insights that can inform
             and strengthen our security measures.
           </p>
-          <Button className="text-sm font-semibold">Get Started</Button>
+          <Link href={"/tool"}>
+            <Button className="text-sm font-semibold">Get Started</Button>
+          </Link>
         </div>
       </section>
       <section id="about" className="section">
