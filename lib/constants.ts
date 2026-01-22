@@ -11,13 +11,19 @@ export const services = [
   {
     title: "Mobile Application",
     icon: Phone,
-    action: () => {},
+    action: () => {
+      window.location.href =
+        "https://github.com/Julius-Encryptus/JuliusEncryptusMobile";
+    },
   },
 
   {
     title: "API",
     icon: Laptop,
-    action: () => {},
+    action: () => {
+      window.location.href =
+        "https://github.com/Julius-Encryptus/JuliusEncryptus";
+    },
   },
 ];
 
