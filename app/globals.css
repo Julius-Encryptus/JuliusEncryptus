@@ -179,6 +179,9 @@
   --tracking-wide: calc(var(--tracking-normal) + 0.025em);
   --tracking-wider: calc(var(--tracking-normal) + 0.05em);
   --tracking-widest: calc(var(--tracking-normal) + 0.1em);
+
+  --font-nunito: "Nunito", monospace;
+  --font-arial: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -191,5 +194,26 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .section {
+    @apply px-8 lg:px-32 py-16 place-content-center;
+  }
+
+  .pattern {
+    @apply bg-center bg-cover;
+    background-image:
+      repeating-linear-gradient(
+        var(--color-primary) 1px,
+        var(--color-primary) 1.5px,
+        transparent 2px,
+        transparent 60px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        var(--color-primary) 1px,
+        var(--color-primary) 1.5px,
+        transparent 2px,
+        transparent 120px
+      );
   }
 }
