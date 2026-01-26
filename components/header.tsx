@@ -11,10 +11,7 @@ import {
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -64,22 +61,30 @@ export default function Header() {
                   <Menu />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="rounded-none w-60">
+              <DropdownMenuContent align="end" className="rounded-none w-50">
                 <DropdownMenuItem>
-                  <Link href="/" className="text-xs font-nunito font-bold w-full">
+                  <Link
+                    href="/"
+                    className="text-xs font-nunito font-bold w-full"
+                  >
                     Home
                   </Link>
                 </DropdownMenuItem>
-                  <DropdownMenuItem>
-                  <Link href="/tool" className="text-xs font-nunito font-bold w-full">
+                <DropdownMenuItem>
+                  <Link
+                    href="/tool"
+                    className="text-xs font-nunito font-bold w-full"
+                  >
                     Online Decoder
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Button className="text-xs font-bold font-nunito rounded-full hover:cursor-pointer">
-              Contact Us
-            </Button>
+            <a href="mailto:nkca122@gmail.com">
+              <Button className="text-xs font-bold font-nunito rounded-full hover:cursor-pointer">
+                Contact Us
+              </Button>
+            </a>
           </div>
         </div>
       </header>

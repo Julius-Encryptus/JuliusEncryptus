@@ -17,7 +17,7 @@ export default function Index() {
         <div className="absolute top-1/2 left-1/2 -translate-1/2 flex justify-center items-center">
           <div className="min-w-4/5 max-w-250">
             <div className="min-w-70 max-w-75 aspect-square absolute -z-1 top-1/2 left-1/2 -translate-1/2">
-              <Image src={"/assets/globe.png"} fill preload alt="" />
+              <Image src={"/assets/globe.png"} fill priority={true} loading="eager" alt="" />
             </div>
 
             <svg

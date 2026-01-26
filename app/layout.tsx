@@ -22,6 +22,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Julius Encryptus",
   description: "A Caesar Cipher Analysis Tool",
+  keywords: ["cybersecurity", "cipher"],
 };
 
 export default function RootLayout({
